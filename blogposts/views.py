@@ -6,9 +6,10 @@ def index(request):
     count = Blogpost.objects.all().count()
     context = {
         'count': count,
-        'title_text': 'Blog Home'
+        'title_text': 'Tech Travels',
+        #'blogposts': Blogpost.objects.all()
     }
-    return render(request, 'blogposts/blog_home.html', context)
+    return render(request, ('blogposts/blog_home.html'), context)
 
 
 def blog_posts(request): 

@@ -1,0 +1,41 @@
+body {
+    color: black;
+    width: 100%;
+    background-color: #f5f5ef;
+}
+
+.header-img {
+    padding: 20px;
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+
+}
+h1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #f5f5ef;
+}
+
+.welcome {
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    display: flex;
+    align-items: justify;
+
+}
+
+p {
+    color: green;
+}
+
+ul {
+    list-style-type:none;
+
+}
