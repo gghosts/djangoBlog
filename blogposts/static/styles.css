@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
 body {
     color: green;
     width: 100%;
@@ -19,40 +21,44 @@ body {
 }
 
 .header-content{
-
+    display: inline;
 }
 
 h1 {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     color: #FFFFFF;
     margin-top: 0;
     position: relative;
+}
+
+h1.title-font{
+    font-family: 'Share Tech', sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    display: flex;
+    align-items: right;
+    flex-direction: row;
+    padding: 15px;
+    padding-left: 30px;
 }
 
 .welcome {
     text-align: center;
     color: #FFFFFF;
 }
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    color: #00D084;
-}
 
 .blog-content {
     padding: 20px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .blog-posts-container{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 65%;
     background-color: #FFFFFF;
     overflow: auto;
@@ -67,23 +73,49 @@ h1 {
 }
 
 p {
+    display: flex;
     color: green;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
 
-ul {
-    list-style-type:none;
-
-}
-
-.footer-curve{
-
-}
-.footer-content{
+ul.nav {
+    color: #00D084;
+    list-style:none;
     position: absolute;
-    background-color: #00D084;
+    right: 0;
+    top: 0;
+    padding: 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #FFFFFF;
+  }
+
+a:visited {
+    color: green;
+  }
+
+.footer-bg{
+
+}
+
+.footer-content{
+
+}
+
+.footer-text{
+    display: flex;
+    color: green;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: auto;
-    width: 65%;
+    background-color: #FFFFFF;
+
+
+
 }
