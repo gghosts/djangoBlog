@@ -115,7 +115,8 @@ p {
     padding: 15px;
 }
 
-.footer-bg{
+.footer-bg.text{
+    color: #FFFFFF;
 }
 
 .footer-content{
