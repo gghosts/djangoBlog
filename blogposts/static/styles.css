@@ -17,12 +17,35 @@ body {
     width: 600px;
     display: block;
     margin: 0 auto;
-
 }
 
 .header-content{
     display: inline;
+    display: flex;
+    justify-content: space-between;
 }
+
+ul.nav {
+    color: #00D084;
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    padding: 10px;
+}
+
+a {
+    color: #FFFFFF;
+  }
+
+a:visited {
+    color: green;
+  }
 
 h1 {
     display: flex;
@@ -35,18 +58,21 @@ h1 {
 
 h1.title-font{
     font-family: 'Share Tech', sans-serif;
-    font-size: 75px;
+    font-size: 70px;
     font-weight: bold;
     display: flex;
-    align-items: right;
     flex-direction: row;
-    padding: 15px;
+    padding-top: 15px;
     padding-left: 30px;
 }
 
 .welcome {
     text-align: center;
     color: #FFFFFF;
+}
+
+#post {
+    border: 1px;
 }
 
 .blog-content {
@@ -61,14 +87,23 @@ h1.title-font{
     align-items: center;
     width: 65%;
     background-color: #FFFFFF;
-    overflow: auto;
     flex-direction: column-reverse;
-    flex-wrap: column wrap;
     border-radius: 50px;
-
 }
 
 .post-title {
+    font-family: 'Share Tech', sans-serif;
+    text-transform: uppercase;
+}
+
+h2.post-title, p.author-title, p.desc-title, p.desc-title2 {
+    display: flex;
+    flex-direction: column;
+}
+
+p.desc-title, p.desc-title2 {
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -80,42 +115,29 @@ p {
     padding: 15px;
 }
 
-ul.nav {
-    color: #00D084;
-    list-style:none;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 20px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-a {
-    color: #FFFFFF;
-  }
-
-a:visited {
-    color: green;
-  }
-
 .footer-bg{
-
 }
 
 .footer-content{
-
 }
 
 .footer-text{
-    display: flex;
     color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
-
-
-
+    
 }
+
+@media (max-width: 640px) {
+    .header-content {
+      text-align: center;
+    }
+
+    .h1-title-font {
+        flex-direction: column;
+    }
+  
+    .ul-nav {
+      flex-direction: column;
+      margin: 0.8em 0;
+    }
+
+  }

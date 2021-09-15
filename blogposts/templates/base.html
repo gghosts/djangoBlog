@@ -16,23 +16,25 @@
   <body>
     <svg class= "curve" width="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#00d08444"></stop><stop offset="95%" stop-color="#7bdcb544"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,120 0,120 C 88.6602542081759,106.24802473376846 177.3205084163518,92.49604946753693 239,90 C 300.6794915836482,87.50395053246307 335.3782205427688,96.26382686362076 387,103 C 438.6217794572312,109.73617313637924 507.16660941257294,114.44864307798007 589,121 C 670.8333905874271,127.55135692201993 765.9553418069394,135.94160082445896 838,146 C 910.0446581930606,156.05839917554104 959.0120233596701,167.7849536241841 1013,152 C 1066.9879766403299,136.2150463758159 1125.99656475438,92.91858467880454 1198,83 C 1270.00343524562,73.08141532119546 1355.00171762281,96.54070766059773 1440,120 C 1440,120 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 300)"></path><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#00d08466"></stop><stop offset="95%" stop-color="#7bdcb566"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,240 0,240 C 68.69666781174854,229.32256956372382 137.39333562349708,218.64513912744764 198,230 C 258.6066643765029,241.35486087255236 311.12332531776013,274.74201305393336 383,277 C 454.87667468223987,279.25798694606664 546.1133631054621,250.38680865681894 612,247 C 677.8866368945379,243.61319134318106 718.4232222603915,265.7107523187908 795,263 C 871.5767777396085,260.2892476812092 984.1937478529715,232.77018206801782 1054,218 C 1123.8062521470285,203.22981793198218 1150.8017863277225,201.20851940913775 1208,207 C 1265.1982136722775,212.79148059086225 1352.5991068361386,226.39574029543112 1440,240 C 1440,240 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 300)"></path><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#00d08488"></stop><stop offset="95%" stop-color="#7bdcb588"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,360 0,360 C 85.65372724149776,363.3967708691171 171.30745448299552,366.79354173823424 238,377 C 304.6925455170045,387.20645826176576 352.4239093095156,404.22260391618005 421,392 C 489.5760906904844,379.77739608381995 578.996908278942,338.3160425970457 641,321 C 703.003091721058,303.6839574029543 737.5884575747165,310.51322569563723 802,317 C 866.4115424252835,323.48677430436277 960.6492614221918,329.6310546204054 1036,332 C 1111.3507385778082,334.3689453795946 1167.8144967365165,332.9625558227413 1232,337 C 1296.1855032634835,341.0374441772587 1368.0927516317417,350.5187220886294 1440,360 C 1440,360 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 300)"></path><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#00d084ff"></stop><stop offset="95%" stop-color="#7bdcb5ff"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,480 0,480 C 88.10443146684989,493.46616283064236 176.20886293369978,506.9323256612848 232,499 C 287.7911370663002,491.0676743387152 311.2689797320508,461.7368601855032 382,458 C 452.7310202679492,454.2631398144968 570.7152181380968,476.12023359670223 647,485 C 723.2847818619032,493.87976640329777 757.8701477155618,489.7822054276881 822,485 C 886.1298522844382,480.2177945723119 979.8041909996564,474.75094469254554 1043,469 C 1106.1958090003436,463.24905530745446 1138.9130882858124,457.21401580212984 1200,459 C 1261.0869117141876,460.78598419787016 1350.5434558570937,470.3929920989351 1440,480 C 1440,480 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 300)"></path>
     </svg>
+
     <div id="header-content">
       <h1 class="title-font">{{ title_text|title }}</h1> 
       <ul class="nav">
         <li>
-          <a href="{% url 'index' %}">Blog Home </a>
+          <a href="{% url 'index' %}">Blog Home   </a>
         </li>
         <li>
-          <a href="{% url 'posts' %}">Posts </a>
+          <a href="{% url 'posts' %}">   Posts   </a>
         </li>
         <li>
-          <a href="{% url 'new_post' %}">New Posts </a>
+          <a href="{% url 'new_post' %}">   New Posts   </a>
         </li>
         <li>
-          <a href="{% url 'about' %}">About</a>
+          <a href="{% url 'about' %}">  About</a>
         </li>
       </ul>
     </div> 
+
         {% if request.user.is_authenticated %}
         <h4>
           Welcome, {% if request.user.first_name %} {{ request.user.first_name }} {%
@@ -41,27 +43,27 @@
         {% else %}
         <h5 class="welcome">Welcome anonymous user. Want to login?</h5>
         {% endif %} {% load static %}
-
     <link rel= "stylesheet" type= "text/css" href= "{% static 'styles.css' %}">
     </div>
+
   <section class="blog-content">
     <div class="blog-posts-container">
         {% for post in blogposts %}
-          <h2 class="post-title">{{ post.title }}</h2>    
-          <p>Author: {{ post.author }}. Published on {{ post.publish_date }}</p>
           {% if post.description|length <= 5 %}
-              <p>Description is currently not available.</p>
+              <p class="desc-title">Description is currently not available.</p>
           {% else %}
-              <p>{{ post.description }} <a href="{% url 'post' post.id %}"> Read more...</a></p>
+            <p class="desc-title2">{{ post.description }} <a href="{% url 'post' post.id %}"> Read more...</a></p>
+            <p class="author-title">Author: {{ post.author }}. Published on {{ post.publish_date }}</p>
+            <h2 class="post-title"><a href="{% url 'post' post.id %}">{{ post.title }}</a></h2>  
           {% endif %}
         {% endfor %}
     </div>
+
   </section>
     {% block content %} #this is substituted in the child template {% endblock%}
     <section id="footer-content">
-      <svg class="footer-bg" height="100%" width="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#7bdcb5ff"></stop><stop offset="95%" stop-color="#7bdcb5ff"></stop></linearGradient></defs><path d="M 0,700 C 0,700 0,350 0,350 C 40.688152175976015,412.492262142003 81.37630435195203,474.9845242840061 126,467 C 170.62369564804797,459.0154757159939 219.1829347681679,380.5541650059785 258,335 C 296.8170652318321,289.4458349940215 325.89195657537624,276.7988156920799 360,295 C 394.10804342462376,313.2011843079201 433.249238930327,362.2505722257018 475,374 C 516.750761069673,385.7494277742982 561.1110877033157,360.19889540511303 599,338 C 636.8889122966843,315.80110459488697 668.3064102564102,296.95384615384614 709,295 C 749.6935897435898,293.04615384615386 799.6632712710434,307.98571997950233 837,329 C 874.3367287289566,350.01428002049767 899.0405046594166,377.1032739281444 942,379 C 984.9594953405834,380.8967260718556 1046.1747100912903,357.60118430792005 1088,388 C 1129.8252899087097,418.39881569207995 1152.2606549754219,502.49198884017534 1194,468 C 1235.7393450245781,433.50801115982466 1296.7826700070225,280.4308603313785 1341,241 C 1385.2173299929775,201.56913966862152 1412.6086649964886,275.7845698343108 1440,350 C 1440,350 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"><text>
-        <p class="footer-text">Copyright Tabi 2021</p>
-      </text></path></svg>
+      <svg class="footer-bg" height="100%" width="100%" id="svg" viewBox="0 0 1440 700" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient"><stop offset="5%" stop-color="#7bdcb5ff"></stop><stop offset="95%" stop-color="#7bdcb5ff"></stop></linearGradient></defs><path d="M 0,700 C 0,700 0,350 0,350 C 40.688152175976015,412.492262142003 81.37630435195203,474.9845242840061 126,467 C 170.62369564804797,459.0154757159939 219.1829347681679,380.5541650059785 258,335 C 296.8170652318321,289.4458349940215 325.89195657537624,276.7988156920799 360,295 C 394.10804342462376,313.2011843079201 433.249238930327,362.2505722257018 475,374 C 516.750761069673,385.7494277742982 561.1110877033157,360.19889540511303 599,338 C 636.8889122966843,315.80110459488697 668.3064102564102,296.95384615384614 709,295 C 749.6935897435898,293.04615384615386 799.6632712710434,307.98571997950233 837,329 C 874.3367287289566,350.01428002049767 899.0405046594166,377.1032739281444 942,379 C 984.9594953405834,380.8967260718556 1046.1747100912903,357.60118430792005 1088,388 C 1129.8252899087097,418.39881569207995 1152.2606549754219,502.49198884017534 1194,468 C 1235.7393450245781,433.50801115982466 1296.7826700070225,280.4308603313785 1341,241 C 1385.2173299929775,201.56913966862152 1412.6086649964886,275.7845698343108 1440,350 C 1440,350 1440,700 1440,700 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150"></path>
+          <text x="50%" y="80%" text-anchor="middle" font-size="30" font-color="white" font-family="'Share Tech', sans-serif">Copyright Tabi 2021</text></svg>
     </section>
     <!-- JavaScript Bundle with Popper -->
     <script
