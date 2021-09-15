@@ -17,7 +17,7 @@ def blog_posts(request):
         'title_text': 'blog posts',
         'blogposts': Blogpost.objects.all()
     }
-    return render(request, 'blogposts/blog_posts.html', context)
+    return render(request, 'blogposts/blog_home.html', context)
 
 def blog_post(request, post_id):
     print(post_id)
