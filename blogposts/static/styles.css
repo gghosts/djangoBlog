@@ -71,10 +71,6 @@ h1.title-font{
     color: #FFFFFF;
 }
 
-#post {
-    border: 1px;
-}
-
 .blog-content {
     padding: 20px;
     display: flex;
@@ -125,6 +121,23 @@ p {
 .footer-text{
     color: green;
     
+}
+
+.h3 {
+    justify-content: center;
+    align-content: center;
+}
+
+.new-post-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#button {
+    background-color: #FFFFFF;
+    color: #00D084;
 }
 
 @media (max-width: 640px) {

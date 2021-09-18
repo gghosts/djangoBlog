@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
+<link rel= "stylesheet" type= "text/css" href= "{% static 'styles.css' %}">
 
+<div class="new-post-form" justify-content: center>
+    <h3>Create a new blog below:</h3>
     <form action="{% url 'new_post' %}" method="POST">
         {% csrf_token %}
         <label>
@@ -21,6 +25,6 @@
         </label>
         <button type="submit">New Post</button>
     </form>
-    
+</div>
+
 {% endblock %}
- 
